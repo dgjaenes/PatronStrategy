@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="es.cordiweb.patronstrategy.MainActivity">
+
+
+    <TextView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:text="Selecciona metodo de pago" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/action_card"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:minWidth="32dp"
+            android:padding="16dp"
+            android:text="Tarjeta"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/action_cash"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_toStartOf="@id/action_card"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:minWidth="32dp"
+            android:padding="16dp"
+            android:text="Efectico"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/action_coupon"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_toStartOf="@id/action_cash"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:minWidth="32dp"
+            android:padding="16dp"
+            android:text="Cupon"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+</LinearLayout>
